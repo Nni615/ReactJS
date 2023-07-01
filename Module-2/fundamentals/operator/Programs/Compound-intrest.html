@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Program-3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>3)Write a program to print compound Intrest</h1>
+    <script>
+        // let P=2000;                              //static
+        // let R=5;
+        // let T=6;
+        // let amount=P *(Math.pow((1 + R/100),T));
+        // let CI =amount-P;
+        // document.write("Compound Intrest = "+CI);
+        var p,r,t;                                  //Dynamic
+        p=prompt("enter the value of p: ");
+        r=prompt("enter the value of r: ");
+        t=prompt("enter the value of t: ");
+        let amount=p*(Math.pow((1+r/100),t));
+        let CI =amount-p;
+        document.write("Compound Intrest = "+CI);
+    </script>
+</body>
+</html>
