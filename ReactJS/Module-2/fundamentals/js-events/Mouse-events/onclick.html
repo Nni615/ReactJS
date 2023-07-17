@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Onclick</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function test()
+        {
+            document.getElementById("para").style='color:red; transition:2s ease all; padding:10px; font-size:25px; width:50%; height:auto; margin:auto'
+        }
+    </script>
+</head>
+<body>
+    <section style="border: 2px solid black;">
+    <p id="para" style="padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illum voluptates inventore dicta quibusdam distinctio, dolorum sequi ipsam consequuntur eum. 
+        Repellat placeat aperiam suscipit rerum voluptatibus voluptate, neque dolores harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque architecto laudantium, suscipit rem pariatur sint nam 
+        tempore modi illum facilis aut, odio assumenda obcaecati deleniti in dolor, officiis enim voluptatem!</p>
+        <button type="button" onclick="test()" style="margin-left: 40%;margin-top: 15px;">CLICK ME</button>
+        <button type="button" ondblclick="test()">CLICK ME</button>
+    </section>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mouse-events</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function event1()
+        {
+            document.getElementById("image").src='Images/funny-1.jpg';
+        }
+        function event2()
+        {
+            document.getElementById("image").src='Images/funny-2.jpg';
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <img src="Images/funny.jpg" alt="" id="image" style="width: 350px; height: 350px; border: 10px ridge gray; margin-top: 100px;" onmouseover="event1()" onmouseout="event2()">
+    </center>
+</body>
+</html>

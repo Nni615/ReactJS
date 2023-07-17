@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>View Cart</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Glyphonics -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script>
+        function subtot()
+        {
+            var p=document.getElementById("price").value;
+            var q=document.getElementById("qty").value;
+            var r=p*q;
+            document.getElementById("tot").innerHTML=r;
+        }
+        function subtot1()
+        {
+            var a=document.getElementById("pr").value;
+            var b=document.getElementById("qt").value;
+            var c=a*b;
+            document.getElementById("tot1").innerHTML=c;
+        }
+        function subtot2()
+        {
+            var x=document.getElementById("pri").value;
+            var y=document.getElementById("Qt").value;
+            var z=x*y;
+            document.getElementById("tot2").innerHTML=z;
+        }
+        function subtot3()
+        {
+            var i=document.getElementById("Pr").value;
+            var j=document.getElementById("qtyy").value;
+            var k=i*j;
+            document.getElementById("tot3").innerHTML=k;
+        }
+        function Subtotal()
+        {
+            var S=document.getElementById("btn").value;
+            var S=r+c+z+k;
+            document.write(S);
+        }
+    </script>
+</head>
+<body>
+        <h1 class="text-center mt-5">View Cart<span class="bi bi-cart-dash"></span><sup><span class="badge badge-danger bg-danger text-white rounded-pill fs-5">1</span></sup></h1>
+
+        <div class="container p-5 mt-0">
+            <div class="card">
+                <div class="card-header"><span class="bi bi-cart-dash"></span><span class="badge badge-danger bg-danger text-white rounded-pill">4</span>
+                    <button type="button" class="btn btn-sm btn-primary float-end">View More>></button>
+                </div>
+                <div class="card-body">
+                    <table class="table table-responsive table-striped table-hover table-borderless">
+                        <tr>
+                            <th>No.</th>
+                            <th>Photo</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>offerPrice</th>
+                            <th>Qty</th>
+                            <th>Subtotal</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="Images/toy-1.webp" alt="" height="95px" width="95px"></td>
+                            <td>Dragon</td>
+                            <td>Rs.1100</td>
+                            <td><del>Rs.1500</del></td>
+                            <td>Rs. <input type="text"id="price" value="1100" style="border: none;" readonly></td>
+                            <td><input type="number"id="qty" min="1" max="5" value="1" onchange="subtot()"></td>
+                            <td>Rs.1100</td>
+                            <td><a href="#" class="btn btn-sm bt-danger"><i class="bi bi-trash"></i></a></td>
+                            <tr>
+                                <td colspan="8">
+                                    <h1 class="float-end">total Rs. <label id="tot">1100</label>-/</h1>
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="Images/toy-2.jpg" alt="" height="95px" width="95px"></td>
+                            <td>Biker</td>
+                            <td>Rs.1500</td>
+                            <td><del>Rs.1800</del></td>
+                            <td>Rs. <input type="text"id="pr" value="1500" style="border: none;" readonly></td>
+                            <td><input type="number"id="qt" min="1" max="5" value="1" onchange="subtot1()"></td>
+                            <td>Rs.1500</td>
+                            <td><a href="#" class="btn btn-sm bt-danger"><i class="bi bi-trash"></i></a></td>
+                            <tr>
+                                <td colspan="8">
+                                    <h1 class="float-end">total Rs. <label id="tot1">1500</label>-/</h1>
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="Images/toy-3.jfif" alt="" height="95px" width="95px"></td>
+                            <td>Pickachu</td>
+                            <td>Rs.999</td>
+                            <td><del>Rs.1400</del></td>
+                            <td>Rs. <input type="text"id="pri" value="999" style="border: none;" readonly></td>
+                            <td><input type="number"id="Qt" min="1" max="5" value="1" onchange="subtot2()"></td>
+                            <td>Rs.999</td>
+                            <td><a href="#" class="btn btn-sm bt-danger"><i class="bi bi-trash"></i></a></td>
+                            <tr>
+                                <td colspan="8">
+                                    <h1 class="float-end">total Rs. <label id="tot2">999</label>-/</h1>
+                                </td>
+                            </tr>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><img src="Images/toy-4.jpg" alt="" height="95px" width="95px"></td>
+                            <td>Unicorn</td>
+                            <td>Rs.1000</td>
+                            <td><del>Rs.1800</del></td>
+                            <td>Rs. <input type="text"id="Pr" value="1000" style="border: none;" readonly></td>
+                            <td><input type="number"id="qtyy" min="1" max="5" value="1" onchange="subtot3()"></td>
+                            <td>Rs.1000</td>
+                            <td><a href="#" class="btn btn-sm bt-danger"><i class="bi bi-trash"></i></a></td>
+                             <tr>
+                                <td colspan="8">
+                                    <h1 class="float-end">total Rs. <label id="tot3">1000</label>-/</h1>
+                                </td>
+                            </tr>  
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <button type="button" value="Subtotal" id="btn" class="btn btn-primary" onchange="Subtotal()"><label id="print"></label> Subtotal</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

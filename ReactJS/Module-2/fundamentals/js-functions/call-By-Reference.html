@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Call By Reference</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <script>
+        function Myself(fnm, lnm, age, hobby)
+        {
+            //call by reference
+            var fname=fnm;
+            firstname="My firstname is:&nbsp;"+fname+"<br>"+"<br>";
+            var lname=lnm;
+            lastname="My lastname is:&nbsp;"+lname+"<br>"+"<br>";
+            var A=age;
+            Age="Age is:&nbsp;"+A+"<br>"+"<br>";
+            var hob=hobby;
+            Hobb="My Hobby is:&nbsp;"+hob+"<br>"+"<br>";
+            document.write(firstname + lastname + Age + Hobb);
+        }
+        Myself("Nandini" , "Maradiya" ,"24" , "Drawing");
+    </script>
+</body>
+</html>
