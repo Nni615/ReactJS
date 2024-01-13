@@ -1,0 +1,13 @@
+*{
+    margin: 8px;
+    padding: 6px;
+}
+body{
+    border: 3px solid black;
+    font-family: cursive;
+    font-size: 30px;
+}
+Marquee{
+    color: blue;
+    border: 4px groove black;
+}
